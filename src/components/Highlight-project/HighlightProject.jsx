@@ -18,7 +18,7 @@ const HighlightProject = () => {
           <div className="bg-primary">
             <button className="">Industry | Construction</button>
             <h1 className="">VidaDynamics</h1>
-            <p className="">At Vida Projects, our goal goes beyond just offering tools, it's about creating a world where construction project management is intuitive,</p>
+            <p className="">At Vida Projects, our goal goes beyond just offering tools, it's about creating a world where construction project management is intuitive</p>
             <div className="flex">
               <div className="">
                 <span className="">40%</span>

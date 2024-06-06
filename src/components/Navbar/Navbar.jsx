@@ -1,4 +1,7 @@
-import React from "react";
+// import React from "react";
+import { FaBars } from "react-icons/fa";
+import { FiPhoneCall } from "react-icons/fi";
+
 import logo from "../../assets/images/logo/logomain.svg";
 
 const Navbar = () => {
@@ -26,23 +29,29 @@ const Navbar = () => {
           <li className="hover:text-[#0060af] mr-[28px] whitespace-nowrap">
             OUR TEAM
           </li>
-          <li className="flex  gap-6 mr-[32px] ">
+          <li className="flex gap-6 mr-[32px] ">
             <button
               type="button"
               className="bg-[#0060af] text-white p-2 rounded-md whitespace-nowrap"
             >
-              Book a call{" "}
+              <FiPhoneCall />
+              Book a call
             </button>
           </li>
         </ul>
       </div>
 
       <div className="toggle-button lg:hidden">
-        <ion-icon
+        {/* <ion-icon
           onclick="onToggleMenu(this)"
           name="menu"
           className="text-3xl cursor-pointer md:hidden"
-        ></ion-icon>
+        ></ion-icon> */}
+        <FaBars
+          onclick="onToggleMenu(this)"
+          name="menu"
+          className="text-3xl cursor-pointer md:hidden"
+        />
       </div>
     </nav>
   );

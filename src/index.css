@@ -6,7 +6,6 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x:hidden; */
 }
 .container {
   width: 1696px;
@@ -23,6 +22,7 @@ a {
 
 body {
   font-family: CircularStd;
+  overflow-x: hidden;
 }
 .border-gradient1 {
   border-image: linear-gradient(to right, #ffffff, #185f9a);

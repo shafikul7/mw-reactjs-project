@@ -1,10 +1,6 @@
-import {
-  faCoffee,
-  faEnvelope,
-  faFaceSmileBeam,
-  faPenNib,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {faCoffee} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaFacebook, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -17,18 +13,13 @@ const Header = () => {
             </a>
 
             <a href="" className="text-white text-xs lg:text-sm">
-
               contact@mediusware.com
             </a>
           </div>
           <div className="flex justify-end  gap-3 text-primary">
-            <FontAwesomeIcon icon={faPenNib} />
-            <FontAwesomeIcon icon={faEnvelope} />
-            <FontAwesomeIcon icon={faFaceSmileBeam} />
-            <FontAwesomeIcon icon={faCoffee} />
-
-            
-           
+            <FaFacebook />
+            <FaTwitter />
+            <FaLinkedinIn />
           </div>
         </div>
       </div>
