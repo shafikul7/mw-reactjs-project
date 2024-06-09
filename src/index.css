@@ -7,9 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
+/* .container {
   width: 1696px;
   margin: 0 auto;
+} */
+htnl {
+  overflow: hidden;
 }
 
 ul,
@@ -38,3 +41,12 @@ body {
 .text-custom-gradient {
   color: linear-gradient(279.76deg, #369f99 -23.9%, #ffffff 81.97%);
 }
+.bgCustomGradien {
+  color: linear-gradient(280deg, #369f99 -23.9%, #fff 81.97%);
+  /* border-image-slice: 1; */
+}
+
+
+/* <div className="bg-clip-text text-transparent bg-gradient-to-r from-custom-blue to-custom-pink">
+      Gradient Text
+    </div> */

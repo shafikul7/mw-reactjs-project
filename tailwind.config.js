@@ -31,6 +31,19 @@ export default {
         md: "1696px",
         "2xl": "1696px",
       },
+      keyframes: {
+        blink: {
+          "50%": { opacity: "0" },
+        },
+        typing: {
+          from: { width: "0" },
+          to: { width: "100%" },
+        },
+      },
+      animation: {
+        blink: "blink 1s step-end infinite",
+        typing: "typing 3s steps(30, end) 1s infinite",
+      },
     },
   },
   plugins: [],

@@ -1,7 +1,7 @@
 // import React from 'react';
 import img1 from "../../assets/images/icon/Clients.svg";
-import img2 from "../../assets/images/icon/Experience.svg";
 import img3 from "../../assets/images/icon/Country.svg";
+import img2 from "../../assets/images/icon/Experience.svg";
 import img4 from "../../assets/images/icon/Project.svg";
 
 const ProjectHistory = () => {
@@ -36,20 +36,30 @@ const ProjectHistory = () => {
     // pt-4
     <div className="bg-bgColor pt-[100px] pb-[96px] px-[112px]">
       {/* hover:hidden */}
-      <div className="container flex">
+      {/* class="grid lg:grid-cols-4 grid-cols-2 gap-6" */}
+      <div className="container lg:flex lg:gap-[32px] gap-[16px]">
         {History.map((content) => (
-          <div className=" bg-white md:w-[400px] md:h-[400px] rounded-xl shadow-lg hover:rotate-[-1deg] hover:bg-headerBgSm" key={content.id}>
+          <div
+            className=" bg-white md:w-[400px] md:h-[400px] rounded-xl shadow-lg hover:rotate-[-1deg] hover:bg-headerBgSm"
+            key={content.id}
+          >
             <div className="">
-              <img src={content.image} className="py-[24px] ml-[21px] hover:text-white" />
+              <img
+                src={content.image}
+                className="py-[24px] ml-[21px] hover:text-white"
+              />
             </div>
             <div className="py-[24px] px-[32px]">
-              <h1 className="text-base lg:text-[32px] text-paraColor font-bold hover:text-white">{content.heading}</h1>
+              <h1 className="text-base lg:text-[32px] text-paraColor font-bold hover:text-white">
+                {content.heading}
+              </h1>
             </div>
             <div className="border-t-2 border-indigo-500 py-[24px] px-[32px]">
-              <h3 className="lg:text-[80px] text-2xl text-headerBgSm font-bold hover:text-white">{content.count}</h3>
+              <h3 className="lg:text-[80px] text-2xl text-headerBgSm font-bold hover:text-white">
+                {content.count}
+              </h3>
             </div>
           </div>
-
         ))}
       </div>
 
@@ -70,7 +80,6 @@ const ProjectHistory = () => {
 
         ))}
       </div> */}
-
     </div>
   );
 };
