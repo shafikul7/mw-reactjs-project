@@ -1,6 +1,11 @@
 // import React from "react";
+import { FaFacebook, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import { TbPhoneCall } from "react-icons/tb";
 import footer from "../../assets/images/footer/Footer.jpg";
 import foLogo from "../../assets/images/footer/Group.png";
+// import { MdCall } from "react-icons/md";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaClock, FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   const myFooter = {
@@ -19,36 +24,51 @@ const Footer = () => {
               Bangladesh Address
             </h1>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              <FaLocationDot />
+            </i>
             <p className="">18/5 Ring Road, Mohammadpur, Dhaka</p>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              <TbPhoneCall />
+            </i>
             <p className="">+8801750020408</p>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              <FaClock />
+            </i>
             <p className="">Monday to Friday: 12 PM - 9 PM</p>
           </div>
 
           <div className="text-[18px] text-[#EAECF0] font-normal leading-[24px]">
             <h1>USA Address</h1>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              <FaLocationDot />
+            </i>
             <p className="">1903 commonwealth st, Houston tx 77006</p>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              {" "}
+              <TbPhoneCall />
+            </i>
             <p className="">+1 (978) 431-0122</p>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              <BiLogoGmail className="text-white" />
+            </i>
             <p className="">career@mediusware.com</p>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              <FaClock />
+            </i>
             <p className="">Monday to Friday: 12 PM - 9 PM</p>
           </div>
         </div>
@@ -202,52 +222,66 @@ const Footer = () => {
               Get In Touch
             </h1>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              <TbPhoneCall />
+            </i>
             <p className="">+88 0145481421512 ( Reception )</p>
           </div>
           <div className="">
-            <i className=""></i>
+            <i className="">
+              <BiLogoGmail className="text-white" />
+            </i>
             <p className="">Sales@mediusware.com( Marketing & Sales )</p>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              <TbPhoneCall />
+            </i>
             <p className="">+1 (978) 431-0122 ( Marketing & Sales )</p>
           </div>
           <div className="">
-            <i className=""></i>
+            <i className="">
+              <BiLogoGmail className="text-white" />
+            </i>
             <p className="">career@mediusware.com ( Marketing & Sales )</p>
           </div>
-          <div className="">
-            <i className=""></i>
+          <div className="flex">
+            <i className="">
+              <TbPhoneCall />
+            </i>
             <p className="">+1 (978) 431-0122 ( HR )</p>
           </div>
           <div className="">
-            <i className=""></i>
+            <i className="">
+              <BiLogoGmail className="text-white" />
+            </i>
             <p className="">career@mediusware.com (HR)</p>
           </div>
           <div className="">
-            <i className=""></i>
+            <i className="">
+              <FaClock />
+            </i>
             <p className="">Monday to Friday: 12 PM - 9 PM</p>
           </div>
-          <div className="">
+          <div className="flex">
             <a href="#" className="">
-              <i className="">1</i>
+              <FaFacebook />
             </a>
             <a href="#" className="">
-              <i className="">2</i>
+              <FaLinkedinIn />
             </a>
             <a href="#" className="">
-              <i className="">3</i>
+              <FaTwitter />
             </a>
             <a href="#" className="">
-              <i className="">4</i>
+              <FaYoutube />
             </a>
           </div>
         </div>
       </div>
-      <div>
-        <p className="text-center text-white text-normal text-[18px] border-t border-[#344054]">
+      <div className="">
+        <p className="text-center text-white text-normal text-[18px] border-t border-[#344054] p-6">
           &copy; 2023 Mediusware. All Rights Reserved
         </p>
       </div>

@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .container {
   width: 1696px;
+  margin: 0 auto;
 }
 
 ul,
@@ -37,5 +38,3 @@ body {
 .text-custom-gradient {
   color: linear-gradient(279.76deg, #369f99 -23.9%, #ffffff 81.97%);
 }
-
-/* linear-gradient(99.09deg, rgba(255, 255, 255, 0) 0%, #185F9A 100%); */

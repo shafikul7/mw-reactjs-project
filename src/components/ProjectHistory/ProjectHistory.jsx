@@ -1,7 +1,7 @@
 // import React from 'react';
 import img1 from "../../assets/images/icon/Clients.svg";
 import img2 from "../../assets/images/icon/Experience.svg";
-import img3 from "../../assets/images/icon/Group.svg";
+import img3 from "../../assets/images/icon/Country.svg";
 import img4 from "../../assets/images/icon/Project.svg";
 
 const ProjectHistory = () => {
@@ -33,26 +33,44 @@ const ProjectHistory = () => {
   ];
 
   return (
-    // bg-bgColor
-    <div className="bg-bgColor pt-4">
-      {/* pt-[0px] pb-[96px] px-[112px] */}
-      {/* grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-[32px]  gap-[16px] text-center h-[400px] */}
-      <div className="container">
+    // pt-4
+    <div className="bg-bgColor pt-[100px] pb-[96px] px-[112px]">
+      {/* hover:hidden */}
+      <div className="container flex">
         {History.map((content) => (
-          // border rounded-md
-          <div className=" bg-white flex" key={content.id}>
+          <div className=" bg-white md:w-[400px] md:h-[400px] rounded-xl shadow-lg hover:rotate-[-1deg] hover:bg-headerBgSm" key={content.id}>
             <div className="">
-              {/* py-[24px] px-[32px] */}
-              <img src={content.image} className="" />
-              {/* text-base lg:text-[32px] text-paraColor py-[24px] px-[32px] */}
-              <h1 className="">{content.heading}</h1>
-              {/* lg:text-[80px] text-headerBgSm border-t-2 border-indigo-500 py-[24px] px-[32px] */}
-              <h3 className="">{content.count}</h3>
-              {/* text-2xl  sm font size*/}
+              <img src={content.image} className="py-[24px] ml-[21px] hover:text-white" />
+            </div>
+            <div className="py-[24px] px-[32px]">
+              <h1 className="text-base lg:text-[32px] text-paraColor font-bold hover:text-white">{content.heading}</h1>
+            </div>
+            <div className="border-t-2 border-indigo-500 py-[24px] px-[32px]">
+              <h3 className="lg:text-[80px] text-2xl text-headerBgSm font-bold hover:text-white">{content.count}</h3>
             </div>
           </div>
+
         ))}
       </div>
+
+      {/* hover:block hidden */}
+      {/* <div className="container  flex">
+        {History.map((content) => (
+          <div className=" bg-white md:w-[400px] md:h-[400px] rounded-xl shadow-lg hover:rotate-[-1deg] hover:bg-headerBgSm" key={content.id}>
+            <div className="">
+              <img src={content.image} className="py-[24px] ml-[21px] hover:text-white" />
+            </div>
+            <div className="py-[24px] px-[32px]">
+              <h1 className="text-base lg:text-[32px] text-paraColor font-bold hover:text-white">{content.heading}</h1>
+            </div>
+            <div className="border-t-2 border-indigo-500 py-[24px] px-[32px]">
+              <h3 className="lg:text-[80px] text-2xl text-headerBgSm font-bold hover:text-white">{content.count}</h3>
+            </div>
+          </div>
+
+        ))}
+      </div> */}
+
     </div>
   );
 };

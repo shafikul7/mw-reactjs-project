@@ -9,6 +9,7 @@ import WorkingUs from '../../components/WorkingUs/WorkingUs';
 import HighlightProject from '../../components/Highlight-project/HighlightProject';
 import Footer from '../../components/Footer/Footer';
 import Strategy from '../../components/Strategy/Strategy';
+import InfiniteLoopComponent from '../../components/Test/Test';
 
 const Home = () => {
     return (
@@ -18,11 +19,12 @@ const Home = () => {
             <Hero></Hero>
             <IndustryLeaders></IndustryLeaders>
             <ProjectHistory></ProjectHistory>
-            <IndustryExpertise></IndustryExpertise>
-            <WorkingUs></WorkingUs>
             <Strategy></Strategy>
             <HighlightProject></HighlightProject>
+            <WorkingUs></WorkingUs>
+            <IndustryExpertise></IndustryExpertise>
             <Footer></Footer>
+            
         
         </div>
     );

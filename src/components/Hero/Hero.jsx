@@ -5,6 +5,8 @@ import img1 from "../../assets/images/hero/img2.png";
 import img2 from "../../assets/images/hero/img3.png";
 import img3 from "../../assets/images/hero/img4.png";
 import img5 from "../../assets/images/hero/img5.png";
+import { LuArrowUpRight } from "react-icons/lu";
+
 
 const Hero = () => {
   const myStyle = {
@@ -28,9 +30,11 @@ const Hero = () => {
           </p>
           <div className="text-[22px] ">
             <button className="mx-3 bg-[#0060AF] hover:bg-transparent text-white font-bold hover:text-white py-[18px] px-[32px] border border-blue-500 hover:border-transparent rounded lg:rounded-xl">
+              <LuArrowUpRight />
               Request a quote
             </button>
             <button className="bg-transparent hover:bg-[#0060AF] text-white font-bold hover:text-white py-[18px] px-[32px] border border-blue-500 hover:border-transparent rounded lg:rounded-xl">
+              <LuArrowUpRight />
               Hire Developers
             </button>
           </div>

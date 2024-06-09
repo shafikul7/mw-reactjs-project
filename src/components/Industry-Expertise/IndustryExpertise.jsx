@@ -1,8 +1,5 @@
 // import React from 'react';
-import {
-  default as img1,
-  default as img5,
-} from "../../assets/images/IndustryExpertise/industryA.png";
+import img1 from "../../assets/images/IndustryExpertise/industryA.png";
 import img2 from "../../assets/images/IndustryExpertise/industryB.png";
 import img3 from "../../assets/images/IndustryExpertise/industryC.png";
 import img4 from "../../assets/images/IndustryExpertise/industryD.png";
@@ -34,7 +31,7 @@ const IndustryExpertise = () => {
     },
     {
       id: 5,
-      image: img5,
+      image: img1,
       heading: "Education",
     },
     {
@@ -54,7 +51,7 @@ const IndustryExpertise = () => {
     },
     {
       id: 9,
-      image: img5,
+      image: img1,
       heading: "Government",
     },
     {
@@ -74,28 +71,32 @@ const IndustryExpertise = () => {
     },
   ];
   return (
-    <div className="">
+    <div className="pb-[112px]">
       <div className="container">
-        <h1 className="text-center text-[48px] font-bold leading-[60px]">
+        <h1 className="text-center text-[48px] font-bold leading-[60px] p-6">
           Industry <span className="text-secondary">Expertise</span>
         </h1>
-        <p className="text-center text-[24px] font-normal leading-[32px]">
+        <p className="text-center text-[24px] font-normal leading-[32px] p-3">
           Explore our expertise in crafting innovative solutions across various
           domains—discover the perfect fit for yours!
         </p>
         {/* grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  */}
-        <div className=" flex flex-wrap gap-[32px]">
+        <div className=" flex md:flex-wrap gap-7 justify-center align-middle ">
           {Expertise.map((content) => (
             //
             <div
-              className="lg:w-[400px] w-[167px] m-0 lg:h-[400px] h-[188px] border-2 border-rose-600 rounded-md lg:p-[40px] p-[16px] bg-[#FCFCFD] "
+              className="lg:w-[400px] w-[167px] m-0 lg:h-[400px] h-[188px] lg:p-[40px] p-[16px] bg-[#FCFCFD] rounded-xl shadow-lg hover:bg-headerBgSm "
               key={content.id}
             >
-              {/* object-center */}
-              <img src={content.image} className="" />
-              <h1 className="text-[30px] lg:text-[48px] text-paraColor leading-[60px] font-bold text-center">
+              {/*  */}
+             <div className="">
+             <img src={content.image} className="object-center " />
+             </div>
+              <div className="">
+              <h1 className="text-[30px] lg:text-[48px] text-paraColor leading-[60px] font-bold text-center hover:text-white">
                 {content.heading}
               </h1>
+              </div>
             </div>
           ))}
         </div>
