@@ -15,7 +15,7 @@ const Footer = () => {
   };
   return (
     <div className="" style={myFooter}>
-      <div className="container flex-none md:flex-auto lg:flex text-[16px] text-[#EAECF0] font-normal leading-[24px] pt-[148px] pl-[112px] pb-[146px] pr-[112px]">
+      <div className="container flex-none md:flex-auto lg:flex text-[16px] text-[#EAECF0] font-normal leading-[24px] pt-[148px] pl-[112px] pb-[146px] pr-[112px] ">
         <div className="logo">
           <img src={foLogo} alt="footer logo" />
           <p className="">We shape the art of technology</p>
